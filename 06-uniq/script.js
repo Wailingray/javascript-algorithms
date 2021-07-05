@@ -9,7 +9,7 @@
 
 function uniq(arr) {
     const uniqueArr = arr.filter(function (item, position, array) {
-        return array.lastIndexOf(item) === position; // вернём уникальные элементы
+        return array.indexOf(item) === position; // вернём уникальные элементы
         });
     return uniqueArr;
 
