@@ -9,7 +9,9 @@
 */
 
 function reverseWords(str) {
-    // Напишите код здесь
+    newStr = str.slice(str.lastIndexOf(' '));
+
+    return newStr;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
