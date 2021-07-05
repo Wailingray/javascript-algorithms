@@ -10,12 +10,15 @@ function capitalize(str) {
     strArray = str.split(' ');
     let newStr = '';
 
+    /*Формируем итоговую строку*/
     strArray.forEach(function (el) {
         let firstLetter = el.slice(0,1).toUpperCase()
         let remains = el.slice(-(el.length - 1)).toLowerCase();
         newStr += (firstLetter + remains + ' ');
     });
 
+    /*Удаляем лишний пробел в конце*/
+    newStr = newStr.slice(0,-1);
     return newStr;
 }
 
