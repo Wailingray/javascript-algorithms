@@ -9,7 +9,12 @@
 */
 
 function fibonacci(n) {
-    // Напишите код здесь
+    const simplMass = Array.from({ length: n }, (v, i) =>  i); 
+    let fibMass = [];
+    simplMass.reduce(function(prevVal, el){
+        fibMass.push(prevVal + el);
+    }, 0);
+    console.log(fibMass);
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
