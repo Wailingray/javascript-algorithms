@@ -12,7 +12,7 @@ function anagram(str1, str2) {
     str1 = str1.toLowerCase();
     str2 = str2.toLowerCase();
 
-    //let result = true;
+    if(str1 === str2) return false;
 
     let charArr1 = str1.split('');
     let charArr2 = str2.split('');
