@@ -8,7 +8,13 @@
 */
 
 function factorial(n) {
-    // Напишите код здесь
+    if (n == 0) return 1;
+    else if (n < 0) console.log('ошибка');
+    let result = 1;
+    for(let i = 1; i <= n; i++) {
+        result *= i;
+    }
+    return result;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
