@@ -11,11 +11,9 @@
 function reverseWords(str) {
   strArray = str.split(' ');
   strArray = strArray.reverse();
-  newStr = strArray.join(' ')
-  return newStr;
+  newStrArr = strArray.join(' ')
+  return newStrArr;
 }
-
-// Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(reverseWords('всегда много путей достичь цель есть')); // "есть цель достичь путей много всегда"
 console.log(reverseWords('испробовать их все должны вы')); // "вы должны все их испробовать"*/

@@ -17,8 +17,5 @@ function countZeros(n) {
     return counter;
 }
 
-
-// Протестируйте решение, вызывая функцию с разными аргументами:
-
 console.log(countZeros(20)); // 2 – два нуля, по одному в числах 10 и 20
 console.log(countZeros(342)); // 64

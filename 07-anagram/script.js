@@ -14,9 +14,8 @@ function anagram(str1, str2) {
 
     if(str1 === str2) return false;
 
-    let charArr1 = str1.split('');
-    let charArr2 = str2.split('');
-    //console.log(charArr2);
+    const charArr1 = str1.split('');
+    const charArr2 = str2.split('');
    
     if (charArr1.length >= charArr2.length) {  
         for(let i = 0; i < charArr1.length; i++) {
@@ -30,10 +29,8 @@ function anagram(str1, str2) {
         }  
     }    
             
-    return true;
-        
+    return true;       
 }
-// Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(anagram('UP', 'up')); // true
-//console.log(anagram('hello', 'bye')); // false
+console.log(anagram('hello', 'bye')); // false

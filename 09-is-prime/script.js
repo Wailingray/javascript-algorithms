@@ -17,8 +17,6 @@ function isPrime(n) {
     return true;
 }
 
-// Протестируйте решение, вызывая функцию с разными аргументами:
-
 console.log(isPrime(0)); // false
 console.log(isPrime(1)); // false
 console.log(isPrime(3)); // true

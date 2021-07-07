@@ -7,7 +7,7 @@
  * 
 */
 
-/*Функция из задания 6 для удаления дубликатов*/
+/*Функция из 6 задания для удаления дубликатов*/
 function uniq(arr) {
     const uniqueArr = arr.filter(function (item, position, array) {
         return array.indexOf(item) === position; 
@@ -31,11 +31,5 @@ function intersection(arr1, arr2) {
      return uniq(resultArr);
     }
     
-
-    
-
-
-// Протестируйте решение, вызывая функцию с разными аргументами:
-
 console.log(intersection([1, 1, 5, 4, 2], [8, 91, 4, 1, 1, 3])); // [4, 1]
-//console.log(intersection([1, 5, 4, 2], [7, 12])); // []
+console.log(intersection([1, 5, 4, 2], [7, 12])); // []

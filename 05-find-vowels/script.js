@@ -20,8 +20,6 @@ function findVowels(str) {
     return counter;
 }
 
-// Протестируйте решение, вызывая функцию с разными аргументами:
-
 console.log(findVowels('здравствуй')); // 2
 console.log(findVowels('привет')); // 2
 console.log(findVowels('хеллоу')); // 3

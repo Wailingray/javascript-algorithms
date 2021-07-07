@@ -7,22 +7,20 @@
 */
 
 function capitalize(str) {
-    strArray = str.split(' ');
+    let strArray = str.split(' ');
     let newStr = '';
 
     /*Формируем итоговую строку*/
     strArray.forEach(function (el) {
-        let firstLetter = el.slice(0,1).toUpperCase()
-        let remains = el.slice(-(el.length - 1)).toLowerCase();
-        newStr += (firstLetter + remains + ' ');
+        const firstLetter = el.slice(0,1).toUpperCase()
+        const leftovers = el.slice(-(el.length - 1)).toLowerCase();
+        newStr += (firstLetter + leftovers + ' ');
     });
 
     /*Удаляем лишний пробел в конце*/
     newStr = newStr.slice(0,-1);
     return newStr;
 }
-
-// Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(capitalize('молодость всё простит'));
 console.log(capitalize('Испробовать их Все Должны Вы')); // "Молодость Всё Простит"
