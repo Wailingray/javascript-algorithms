@@ -17,7 +17,7 @@ function uniq(arr) {
 
 
 function intersection(arr1, arr2) {
-    let resultArr = [];
+    const resultArr = [];
     if(arr1.length >= arr2.length) {
         for(let i = 0; i < arr2.length; i++) {
             if (arr1.includes(arr2[i])) resultArr.push(arr1[i])

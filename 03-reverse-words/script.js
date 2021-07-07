@@ -9,10 +9,8 @@
 */
 
 function reverseWords(str) {
-  strArray = str.split(' ');
-  strArray = strArray.reverse();
-  newStrArr = strArray.join(' ')
-  return newStrArr;
+  const strArray = str.split(' ').reverse().join(' ');
+  return strArray;
 }
 
 console.log(reverseWords('всегда много путей достичь цель есть')); // "есть цель достичь путей много всегда"

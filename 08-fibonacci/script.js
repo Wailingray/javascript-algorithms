@@ -9,7 +9,7 @@
 */
 
 function fibonacci(n) {
-    let fibMass = [0,1];
+    const fibMass = [0,1];
     let i = 1;
     while(fibMass.length < n) {
         fibMass.push(fibMass[i] + fibMass[i-1]);

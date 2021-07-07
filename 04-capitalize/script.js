@@ -7,7 +7,7 @@
 */
 
 function capitalize(str) {
-    let strArray = str.split(' ');
+    const strArray = str.split(' ');
     let newStr = '';
 
     /*Формируем итоговую строку*/
