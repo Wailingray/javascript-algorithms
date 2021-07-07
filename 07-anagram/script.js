@@ -14,18 +14,18 @@ function anagram(str1, str2) {
 
     if(str1 === str2) return false;
 
-    const charArr1 = str1.split('');
-    const charArr2 = str2.split('');
+    const charArr1 = str1.split('').sort();
+    const charArr2 = str2.split('').sort();
    
     if (charArr1.length >= charArr2.length) {  
         for(let i = 0; i < charArr1.length; i++) {
-            if(!(charArr1.includes(charArr2[i]))) return false;
+            if(!(charArr1[i] === charArr2[i])) return false;
         }
          
     }
     else {
         for(let i = 0; i < charArr2.length; i++) {
-            if(!(charArr2.includes(charArr1[i]))) return false; 
+            if(!(charArr2[i] === charArr1[i])) return false; 
         }  
     }    
             
@@ -33,4 +33,4 @@ function anagram(str1, str2) {
 }
 
 console.log(anagram('UP', 'up')); // true
-console.log(anagram('hello', 'bye')); // false
+console.log(anagram('aba', 'ba')); // false
