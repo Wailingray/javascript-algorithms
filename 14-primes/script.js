@@ -7,7 +7,15 @@
 */
 
 function primes(num) {
-    // Напишите код здесь
+    let resultArr = [2];
+    if (num <= 1) return [];
+    for(let i = 2; i <= num; i++) {
+        for(let k = 2; k < i; k++) {
+            if(i % k === 0) break;
+            if (k === i - 1) resultArr.push(i); 
+        }
+    }
+    return resultArr;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
