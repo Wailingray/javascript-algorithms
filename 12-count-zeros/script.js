@@ -10,10 +10,11 @@ function countZeros(n) {
     let counter = 0;
     for(let i = 1; i <= n; i++) {
         if (i % 10 === 0) {
-            let a = i / 10;
-            console.log(a)
-            counter += a.toString().length;
-            //console.log(counter)
+           let strArr = i.toString().split('');
+           strArr.forEach(function(el) {
+               if (el == 0) counter++;      
+           });
+           //console.log(a)
         }
     }       
     return counter;
@@ -22,5 +23,20 @@ function countZeros(n) {
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
-//console.log(countZeros(20)); // 2 – два нуля, по одному в числах 10 и 20
-console.log(countZeros(342)); // 11 – 11 нулей в числах: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
+console.log(countZeros(20)); // 2 – два нуля, по одному в числах 10 и 20
+console.log(countZeros(342)); // Не понимаю почему не проходит тест:
+
+            /*
+            10      110     210     310
+            20      120     220     320
+            30      130     230     330
+            40      140     240     340
+            50      150     250     342
+            60      160     260
+            70      170     270
+            80      180     280
+            90      190     290
+            100     200     300
+            ---------------------------------
+    нули:   11  +   11   +  11  +   4     =      37
+            */
