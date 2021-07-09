@@ -22,5 +22,16 @@ function capitalize(str) {
     return newStr;
 }
 
+/* ДРУГОЕ РЕШЕНИЕ
+function capitalize(str) {
+    let strArray = str.split(' '); 
+   
+    const newArr =strArray.map(function(el) {
+     return el.slice(0,1).toUpperCase() + el.slice(-(el.length - 1)).toLowerCase(); 
+   });
+   
+   return newArr.join(' ');
+ }
+*/
 console.log(capitalize('молодость всё простит'));
 console.log(capitalize('Испробовать их Все Должны Вы')); // "Молодость Всё Простит"
